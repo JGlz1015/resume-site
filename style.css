@@ -1,0 +1,177 @@
+:root {
+  --bg: #fff0f6;
+  --nav: #ff7aa8;
+  --nav-light: #ff9fc5;
+  --card: #ffffff;
+  --border: #ffd1e1;
+  --title: #b0135b;
+  --accent: #ff4f93;
+  --text: #2b2b2b;
+  --muted: #666;
+  --shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #ffe3ef, var(--bg));
+  color: var(--text);
+}
+
+/* Top Nav */
+.top-bar {
+  background: linear-gradient(90deg, var(--nav), var(--nav-light));
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.top-bar a {
+  background: rgba(255,255,255,0.95);
+  padding: 8px 16px;
+  margin: 4px;
+  text-decoration: none;
+  color: #222;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.1);
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Page */
+.page {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+}
+
+/* Hero */
+.hero-card {
+  background: linear-gradient(180deg, #fff, #fff7fb);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.hero-title {
+  margin: 0;
+  color: var(--title);
+  font-size: 34px;
+}
+
+.hero-subtitle {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* Layout */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pills */
+.pill {
+  display: inline-block;
+  background: #ffe1ee;
+  color: #7a1140;
+  border: 1px solid #ffc2d7;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* Contact */
+.contact-pills {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #ffd1e1;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+}
+
+/* Text */
+.pretty-text {
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/* Skills */
+.chip-group {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 16px;
+  background: #fff7fb;
+  border: 1px solid #ffe0ec;
+  color: #a01254;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Projects */
+.project {
+  margin-top: 14px;
+  background: #fff7fb;
+  border: 1px solid #ffe0ec;
+  border-radius: 18px;
+  padding: 14px;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #a01254;
+}
+
+/* Small note */
+.small-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Lists */
+ul {
+  margin-left: 18px;
+}
+
+a {
+  color: var(--accent);
+}
